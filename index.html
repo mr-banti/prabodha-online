@@ -44,6 +44,10 @@
     
   </div>
 
+  <section class="maintenance-notice" id="maintenanceNotice" style="display:none;">
+    <strong>NOTICE</strong> - The website is under maintainence. Stay Updated! Read the <a href="https://sites.google.com/view/tanmaysaha/blog" target="_blank" rel="noopener">Editorial Column</a>.
+  </section>
+
   <section class="hero" id="hero"></section>
 
   <section class="edition-grid" id="editionGrid"></section>
@@ -62,6 +66,17 @@
 
 
 </main>
+
+<style>
+.maintenance-notice{
+  max-width:720px; margin:0; padding:1.6rem 2rem;
+  border:1px solid var(--ink,#111); background:var(--paper-dim,#f3f1ec);
+  font-family:var(--sans,sans-serif); font-size:1rem; line-height:1.6;
+  text-align:center;
+}
+.maintenance-notice strong{margin-right:.4rem;}
+.maintenance-notice a{color:var(--signal,#b4232f); border-bottom:1px solid var(--signal,#b4232f);}
+</style>
 
 <footer class="site-footer">
   <div class="footer-title">PRABODHA</div>
@@ -85,5 +100,24 @@
 <script src="loader.js"></script>
 <script src="reader.js"></script>
 <script src="script.js"></script>
+<script>
+  initSite(function(){
+    var arts = window.ALL_ARTICLES || [];
+    if(!arts.length){
+      document.querySelectorAll('body > *').forEach(function(el){
+        el.style.display = 'none';
+      });
+      document.querySelectorAll('main > *').forEach(function(el){
+        el.style.display = 'none';
+      });
+      var main = document.querySelector('main');
+      main.style.display = 'flex';
+      main.style.minHeight = '100vh';
+      main.style.alignItems = 'center';
+      main.style.justifyContent = 'center';
+      document.getElementById('maintenanceNotice').style.display = 'block';
+    }
+  });
+</script>
 </body>
 </html>

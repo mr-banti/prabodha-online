@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="theme.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="images\PRABODHA - LOGObg.png">
+<title>PRABODHA - Daily Edition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Archivo:wght@400;500;600;700&family=Archivo+Expanded:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-row">
+    <div class="masthead-right">
+    <span id="live-clock" class="masthead-clock"></span>
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme"></button>
+</div>
+  </div>
+  <h1 class="masthead-title">
+  <img src="images/PRABODHA - LOGO.png" alt="logo" class="masthead-logo-big">
+  PRABODHA
+  </h1>
+  <p class="masthead-tagline">Frontiers of Science, Technology &amp; Innovation</p>
+  <nav class="section-nav" id="sectionNav">
+    <a href="#" class="active" data-cat="science">Science</a>
+    <a href="#" data-cat="technology">Technology</a>
+    <a href="#" data-cat="medicine">Medicine</a>
+    <a href="#" data-cat="mathematics">Mathematics</a>
+  </nav>
+</header>
+
+<main>
+  <div class="top-actions">
+    <a href="https://sites.google.com/view/tanmaysaha/blog" class="action-btn">Editors Column</a>
+    <a href="archive.html" class="action-btn">Archive</a>
+    <a href="about.html" class="action-btn">About</a>
+    <a href="https://mr-banti.github.io/prabodha/" class="action-btn">NEWSPAPER</a>
+    <a href="https://forms.gle/8tFfdZ5xhYNx6UPv8" class="action-btn">CONTACT US</a>
+    <!-- <button class="action-btn action-btn-empty" disabled></button>
+    <button class="action-btn action-btn-empty" disabled></button> -->
+    
+  </div>
+
+  <section class="hero" id="hero"></section>
+
+  <section class="edition-grid" id="editionGrid"></section>
+
+  <section class="ticker-block">
+    <div class="ticker-label">TOP 10 TECH/SCIENCE - MARKET CAP</div>
+    <div class="ticker-viewport">
+      <div class="ticker-track" id="tickerTrack"></div>
+    </div>
+  </section>
+
+  <section class="opinion-strip" id="opinionStrip">
+    <h2 class="rail-heading">Fundamental Science &amp; Mathematics</h2>
+    <div class="opinion-list" id="opinionList"></div>
+  </section>
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-title">PRABODHA</div>
+  <p>AWAKENING THROUGH KNOWLEDGE</p>
+  <p>NEXT GENERATION NEWSROOM FOR A SMARTER TOMORROW</p>
+  <p class="footer-fine">© <span id="year"></span> PRABODHA - All rights reserved.</p>
+</footer>
+
+<div class="reader-overlay" id="readerOverlay">
+  <div class="reader-panel">
+    <button class="reader-close" id="readerClose" aria-label="Close article">✕</button>
+    <div class="reader-eyebrow" id="readerEyebrow"></div>
+    <h2 class="reader-title" id="readerTitle"></h2>
+    <div class="reader-byline" id="readerByline"></div>
+    <div class="reader-body" id="readerBody"></div>
+  </div>
+</div>
+
+<script src="ticker-data.js"></script>
+<script src="articles/index.js"></script>
+<script src="loader.js"></script>
+<script src="reader.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

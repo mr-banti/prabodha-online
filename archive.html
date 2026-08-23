@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="theme.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="images/PRABODHA - LOGObg.png">
+<title>Archive - PRABODHA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Archivo:wght@400;500;600;700&family=Archivo+Expanded:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="editor.css">
+<link rel="stylesheet" href="archive.css">
+</head>
+<body class="editor-body">
+
+<header class="editor-header">
+  <a href="index.html" class="editor-brand"><img src="images/PRABODHA - LOGO.png" alt="logo" class="brand-logo"> PRABODHA <span>Archive</span></a>
+  <div class="header-links">
+    <span id="archive-live-clock" class="archive-clock"></span>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme"></button>
+  </div>
+</header>
+
+<main class="archive-main">
+  <h1 class="editor-title">Past Articles</h1>
+  <p class="editor-sub">Everything published from this browser, newest first.</p>
+
+  <div class="top-actions">
+    <a href="https://sites.google.com/view/tanmaysaha/blog" class="action-btn">Editors Column</a>
+    <a href="index.html" class="action-btn">Live Site</a>
+    <a href="about.html" class="action-btn">About</a>
+    <a href="https://mr-banti.github.io/prabodha/" class="action-btn">NEWSPAPER</a>
+    <a href="https://forms.gle/8tFfdZ5xhYNx6UPv8" class="action-btn">CONTACT US</a>
+    <!-- <button class="action-btn action-btn-empty" disabled></button> -->
+  </div>
+
+
+  <div class="archive-controls">
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="Search by headline...">
+    </div>
+
+
+    <input type="date" id="dateFilter">
+    <select id="catFilter">
+      <option value="">All Sections</option>
+      <option value="science">Science</option>
+      <option value="technology">Technology</option>
+      <option value="medicine">Medicine</option>
+      <option value="mathematics">Mathematics</option>
+    </select>
+  </div>
+
+  
+
+  <div id="archiveList" class="archive-list"></div>
+</main>
+
+<div class="reader-overlay" id="readerOverlay">
+  <div class="reader-panel">
+    <button class="reader-close" id="readerClose" aria-label="Close article">✕</button>
+    <div class="reader-eyebrow" id="readerEyebrow"></div>
+    <h2 class="reader-title" id="readerTitle"></h2>
+    <div class="reader-byline" id="readerByline"></div>
+    <div class="reader-body" id="readerBody"></div>
+  </div>
+</div>
+
+<script src="articles/index.js"></script>
+<script src="loader.js"></script>
+<script src="reader.js"></script>
+<script src="archive.js"></script>
+</body>
+</html>

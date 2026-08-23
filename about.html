@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="theme.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="images/PRABODHA - LOGObg.png">
+<title>About - PRABODHA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Archivo:wght@400;500;600;700&family=Archivo+Expanded:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="editor.css">
+<link rel="stylesheet" href="about.css">
+</head>
+<body class="editor-body about-body">
+
+<header class="editor-header">
+  <a href="index.html" class="editor-brand"><img src="images/PRABODHA - LOGO.png" alt="logo" class="brand-logo"> PRABODHA <span>About</span></a>
+  <div style="display:flex; align-items:center; gap:1rem;">
+    <a href="https://sites.google.com/view/tanmaysaha/blog" class="editor-exit">Editors Column</a>
+    <a href="index.html" class="editor-exit">Live Site</a>
+    <a href="archive.html" class="editor-exit">Archive</a>
+    <a href="https://mr-banti.github.io/prabodha/" class="editor-exit">NEWSPAPER</a>
+    <a href="https://forms.gle/8tFfdZ5xhYNx6UPv8" class="editor-exit">CONTACT US</a>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme"></button>
+  </div>
+</header>
+
+<section class="about-hero">
+  <span class="about-kicker">Our Mission</span>
+  <h1 class="about-title">Awakening Through Knowledge</h1>
+  <p class="about-lede">PRABODHA is a next-generation newsroom covering the frontiers of science, technology, medicine and mathematics - built for readers who want depth, not noise.</p>
+</section>
+
+<main class="about-main">
+
+  <section class="about-block">
+    <h2>What We Cover</h2>
+    <div class="about-pillars">
+      <div class="pillar">
+        <div class="pillar-num">01</div>
+        <h3>Science</h3>
+        <p>Physics, chemistry, biology, space, climate and the fundamentals shaping our understanding of the universe.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">02</div>
+        <h3>Technology</h3>
+        <p>AI, robotics, quantum computing, cybersecurity and the tools redefining how the world works.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">03</div>
+        <h3>Medicine</h3>
+        <p>Genomics, neuroscience, oncology and public health - reporting on the science of staying alive and well.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">04</div>
+        <h3>Mathematics</h3>
+        <p>Cryptography, statistics and number theory - the quiet language underneath every other discipline.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-block about-split">
+    <div>
+      <h2>How We Work</h2>
+      <p>Every dispatch is drafted, sourced and filed through our own newsroom desk before it's committed to the live edition. Citations are linked inline, sources are numbered, and nothing runs without a byline.</p>
+      <p>PRABODHA is intentionally static and self-contained - no tracking, no ads, no algorithmic feed. Just the day's edition, archived in full, for anyone who wants to read it later.</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat"><span id="statArticles">-</span><label>Articles Filed</label></div>
+      <div class="stat"><span id="statSections">4</span><label>Sections</label></div>
+      <div class="stat"><span id="statDate">-</span><label>Edition Live</label></div>
+    </div>
+  </section>
+
+  <section class="about-block about-notes">
+    <div class="note-item">
+      <h3>Editorial</h3>
+      <p>PRABODHA is written and edited independently. Longer commentary and personal writing appear separately on the <a href="https://sites.google.com/view/tanmaysaha/blog" target="_blank" rel="noopener">Editors Column</a> by the <a href="https://sites.google.com/view/tanmaysaha" target="_blank" rel="noopener">Editor</a>.</p>
+    </div>
+    <div class="note-item">
+      <h3>Corrections &amp; Feedback</h3>
+      <p>Mistakes happen - if something in an issue is inaccurate, outdated, or unclear, reach out through <a href="https://forms.gle/8tFfdZ5xhYNx6UPv8" target="_blank" rel="noopener">CONTACT US</a> and it will be corrected in the archived record where appropriate.</p>
+    </div>
+  </section>
+
+  <section class="about-block about-cta">
+    <h2>Read the Latest Edition</h2>
+    <p>Catch up on today's front page or browse everything ever filed.</p>
+    <div class="about-cta-links">
+      <a href="index.html" class="about-btn about-btn-solid">Today's Edition</a>
+      <a href="archive.html" class="about-btn">Browse Archive</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-title">PRABODHA</div>
+  <p>AWAKENING THROUGH KNOWLEDGE</p>
+  <p>NEXT GENERATION NEWSROOM FOR A SMARTER TOMORROW</p>
+  <p class="footer-fine">© <span id="year"></span> PRABODHA - All rights reserved.</p>
+</footer>
+
+<script src="articles/index.js"></script>
+<script src="loader.js"></script>
+<script src="about.js"></script>
+</body>
+</html>

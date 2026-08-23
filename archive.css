@@ -1,3 +1,23 @@
+.archive-body{background:var(--paper-dim);}
+
+/* ---- Header (moved from editor.css) ---- */
+.archive-header{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:1rem 1.5rem; border-bottom:3px solid var(--rule); background:var(--paper);
+}
+.archive-brand{font-family:var(--serif); font-weight:900; font-size:1.3rem;}
+.archive-brand span{color:var(--signal); font-style:italic; font-weight:500; font-size:.9em;}
+.archive-brand-logo{
+  height:1.6rem; width:1.6rem; vertical-align:middle; margin-right:.4rem;
+  border-radius:50%; object-fit:cover; border:1px solid var(--ink);
+}
+.archive-exit{font-family:var(--sans-x); font-weight:700; font-size:.78rem; text-transform:uppercase; letter-spacing:.05em; color:var(--grey);}
+.archive-exit:hover{color:var(--signal);}
+
+/* ---- Page title (moved from editor.css) ---- */
+.archive-title{font-family:var(--serif); font-weight:900; font-size:2rem;}
+.archive-sub{color:var(--grey); font-size:.9rem; margin:.4rem 0 1.6rem;}
+
 .header-links{display:flex; gap:1.4rem; align-items:center;}
 .archive-clock{
   font-family:var(--sans); font-size:.75rem; color:var(--grey);
@@ -52,7 +72,10 @@
 .archive-empty{color:var(--grey); font-size:.9rem; font-style:italic; padding:2rem 0;}
 
 @media (max-width:640px){
+  .archive-header{padding:.8rem 1rem; flex-wrap:wrap; gap:.6rem;}
+  .archive-header > div{flex-wrap:wrap; gap:.6rem; row-gap:.5rem;}
   .archive-main{padding:1.6rem 1rem 3rem;}
+  .archive-title{font-size:1.5rem;}
   .archive-controls{flex-direction:column;}
   .archive-controls input, .archive-controls select{width:100%; flex:1 1 100%;}
   .archive-row{flex-direction:column; align-items:flex-start; gap:.3rem;}

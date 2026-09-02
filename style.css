@@ -342,6 +342,7 @@ button{font-family:inherit; cursor:pointer;}
 }
 .cite-mark:hover{text-decoration:underline;}
 .reader-sources{margin-top:1.8rem; padding-top:1rem; border-top:1px solid var(--grey);}
+.reader-id{margin-top:1rem; font-size:.7rem; color:var(--grey); opacity:.6; font-family:var(--sans);}
 .sources-toggle{
   background:none; border:1px solid var(--ink); color:var(--ink);
   font-family:var(--sans-x); font-weight:700; font-size:.72rem; text-transform:uppercase;

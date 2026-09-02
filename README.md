@@ -111,7 +111,7 @@ Third-party software, libraries, dependencies, fonts, images, or other materials
 If you wish to use, modify, redistribute, incorporate, or commercially exploit any portion of this project's source code or copyrighted materials, you must obtain prior written permission from Tanmay Saha.
 
 Unless such permission is expressly granted in writing, **all rights are reserved**.
-
+ 
 
 The use of the source code under the MIT License does not grant any rights to
 the project's name, logo, trademarks, branding, or other copyrighted creative

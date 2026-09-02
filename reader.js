@@ -55,7 +55,9 @@ function openReader(id){
       </ol>
     </div>` : '';
 
-  document.getElementById('readerBody').innerHTML = imgHtml + bodyHtml + sourcesHtml;
+  const idHtml = `<div class="reader-id">ID: ${a.id}</div>`;
+
+  document.getElementById('readerBody').innerHTML = imgHtml + bodyHtml + sourcesHtml + idHtml;
   document.getElementById('readerOverlay').classList.add('open');
 
   if(sources.length){

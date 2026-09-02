@@ -113,9 +113,3 @@ If you wish to use, modify, redistribute, incorporate, or commercially exploit a
 Unless such permission is expressly granted in writing, **all rights are reserved**.
  
 
-The use of the source code under the MIT License does not grant any rights to
-the project's name, logo, trademarks, branding, or other copyrighted creative
-assets.
-
-The MIT License does not grant permission to imply endorsement, sponsorship,
-or official association with the original project or its author.
